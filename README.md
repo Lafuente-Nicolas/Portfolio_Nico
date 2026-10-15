@@ -2,6 +2,8 @@
 
 Portfolio de Nicolas Lafuente : création de sites internet pour restaurants, salons et artisans.
 
+**Site en ligne : https://portfolio-nico-v5ut.onrender.com**
+
 - **Front** : HTML, CSS et JavaScript sans framework (`src/Portfolio.Web/wwwroot`)
 - **Back** : C# / ASP.NET Core 8 (API minimale) qui sert le site et gère le formulaire de contact
 
