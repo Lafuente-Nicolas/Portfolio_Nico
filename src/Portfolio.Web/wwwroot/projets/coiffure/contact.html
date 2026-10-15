@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Atelier Céleste</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../fonts/coiffure.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">Projet de démonstration · entreprise fictive · <a href="../../index.html">Retour au portfolio de Nicolas Lafuente</a></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Atelier <i>Céleste</i></a>
+  <nav class="menu"><a href="index.html">Accueil</a><a href="prestations.html">Prestations</a><a href="realisations.html">Réalisations</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  <a class="btn sm" href="contact.html">Prendre rendez-vous</a>
+</div></header>
+
+<div class="wrap phero"><div class="k">Contact</div><h1>Prendre <i>rendez-vous</i></h1><p>Par téléphone, par SMS ou via le formulaire. Nous vous répondons dans la journée.</p></div>
+<section style="padding-top:20px"><div class="wrap cgrid">
+  <div>
+    <div class="ibox"><div class="k">Téléphone et SMS</div><div class="big">03 00 00 00 00</div><p>Du mardi au samedi</p></div>
+    <div class="ibox"><div class="k">Adresse</div><div class="big" style="font-size:1.6rem">8 place du Marché</div><p>Stationnement gratuit à 50 mètres</p></div>
+    <div class="ibox"><div class="k">Horaires</div>
+      <table class="hours"><tr><td>Mardi au vendredi</td><td>9h – 19h</td></tr><tr><td>Samedi</td><td>9h – 17h</td></tr><tr><td>Dimanche et lundi</td><td>Fermé</td></tr></table></div>
+  </div>
+  <form class="f" id="rdv-form" novalidate>
+    <div class="k">Demande de rendez-vous</div>
+    <div class="two"><label for="c-nom">Prénom et nom<input id="c-nom" autocomplete="name"></label><label for="c-tel">Téléphone<input id="c-tel" type="tel" autocomplete="tel"></label></div>
+    <label for="c-presta">Prestation<select id="c-presta"><option>Coupe femme</option><option>Coupe homme</option><option>Coupe enfant</option><option>Couleur ou balayage</option><option>Soin</option><option>Autre</option></select></label>
+    <div class="two"><label for="c-jour">Jour souhaité<input id="c-jour" type="date"></label><label for="c-moment">Moment<select id="c-moment"><option>Matin</option><option>Midi</option><option>Après-midi</option><option>Fin de journée</option></select></label></div>
+    <label for="c-msg">Précisions<textarea id="c-msg" placeholder="Longueur de cheveux, envies, photos d'inspiration…"></textarea></label>
+    <button class="btn" type="submit" style="justify-self:start">Envoyer ma demande</button>
+    <p class="fmsg" id="c-out" role="status"></p>
+  </form>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div><a class="brand" href="index.html">Atelier <i>Céleste</i></a><p style="margin-top:16px;max-width:22em">Salon de coiffure femme, homme et enfant. Colorations végétales et sans ammoniaque.</p></div>
+    <div><h4>Adresse</h4><p>8 place du Marché<br>Centre-ville</p></div>
+    <div><h4>Horaires</h4><p>Mar–ven · 9h–19h<br>Sam · 9h–17h</p></div>
+    <div><h4>Pages</h4><p><a href="index.html">Accueil</a><br><a href="prestations.html">Prestations</a><br><a href="realisations.html">Réalisations</a><br><a href="contact.html">Contact</a></p></div>
+  </div>
+  <div class="fbottom"><span>© 2026 Atelier Céleste</span><span>Site conçu par <a href="../../index.html">Nicolas Lafuente</a></span></div>
+</div></footer>
+<script>
+document.getElementById('rdv-form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('c-out').textContent="Formulaire de démonstration : aucune demande n'a été envoyée.";});
+</script>
+</body>
+</html>

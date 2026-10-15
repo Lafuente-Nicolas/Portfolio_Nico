@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Réalisations · Atelier Céleste</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../fonts/coiffure.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">Projet de démonstration · entreprise fictive · <a href="../../index.html">Retour au portfolio de Nicolas Lafuente</a></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Atelier <i>Céleste</i></a>
+  <nav class="menu"><a href="index.html">Accueil</a><a href="prestations.html">Prestations</a><a href="realisations.html" aria-current="page">Réalisations</a><a href="contact.html">Contact</a></nav>
+  <a class="btn sm" href="contact.html">Prendre rendez-vous</a>
+</div></header>
+
+<div class="wrap phero"><div class="k">Avant, après</div><h1>Nos <i>réalisations</i></h1><p>Quelques transformations réalisées au salon ces derniers mois.</p></div>
+<section style="padding-top:20px"><div class="wrap">
+  <div class="filters" role="group" aria-label="Filtrer les réalisations">
+    <button type="button" id="f-all" data-f="all" aria-pressed="true">Tout</button>
+    <button type="button" id="f-coupe" data-f="coupe" aria-pressed="false">Coupes</button>
+    <button type="button" id="f-couleur" data-f="couleur" aria-pressed="false">Couleurs</button>
+    <button type="button" id="f-soin" data-f="soin" aria-pressed="false">Soins</button>
+  </div>
+  <div class="gal" id="gal"><figure class="ph g-couleur " data-cat="couleur"><img src="images/balayage.jpg" alt="Balayage caramel" loading="lazy" onerror="this.remove()"><figcaption>Photo · Balayage caramel</figcaption></figure><figure class="ph g-coupe " data-cat="coupe"><img src="images/coupe-femme.jpg" alt="Carré flou" loading="lazy" onerror="this.remove()"><figcaption>Photo · Carré flou</figcaption></figure><figure class="ph g-blond " data-cat="couleur"><img src="images/blond.jpg" alt="Blond polaire" loading="lazy" onerror="this.remove()"><figcaption>Photo · Blond polaire</figcaption></figure><figure class="ph g-boucles " data-cat="soin"><img src="images/boucles.jpg" alt="Boucles définies" loading="lazy" onerror="this.remove()"><figcaption>Photo · Boucles définies</figcaption></figure><figure class="ph g-homme " data-cat="coupe"><img src="images/coupe-homme.jpg" alt="Dégradé homme" loading="lazy" onerror="this.remove()"><figcaption>Photo · Dégradé homme</figcaption></figure><figure class="ph g-portrait " data-cat="coupe"><img src="images/portrait.jpg" alt="Coupe et brushing" loading="lazy" onerror="this.remove()"><figcaption>Photo · Coupe et brushing</figcaption></figure><figure class="ph g-soin " data-cat="soin"><img src="images/soin.jpg" alt="Soin réparateur" loading="lazy" onerror="this.remove()"><figcaption>Photo · Soin réparateur</figcaption></figure><figure class="ph g-salon " data-cat="coupe"><img src="images/salon.jpg" alt="Chignon de mariée" loading="lazy" onerror="this.remove()"><figcaption>Photo · Chignon de mariée</figcaption></figure></div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div><a class="brand" href="index.html">Atelier <i>Céleste</i></a><p style="margin-top:16px;max-width:22em">Salon de coiffure femme, homme et enfant. Colorations végétales et sans ammoniaque.</p></div>
+    <div><h4>Adresse</h4><p>8 place du Marché<br>Centre-ville</p></div>
+    <div><h4>Horaires</h4><p>Mar–ven · 9h–19h<br>Sam · 9h–17h</p></div>
+    <div><h4>Pages</h4><p><a href="index.html">Accueil</a><br><a href="prestations.html">Prestations</a><br><a href="realisations.html">Réalisations</a><br><a href="contact.html">Contact</a></p></div>
+  </div>
+  <div class="fbottom"><span>© 2026 Atelier Céleste</span><span>Site conçu par <a href="../../index.html">Nicolas Lafuente</a></span></div>
+</div></footer>
+<script>
+document.querySelectorAll('.filters button').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});
+  var f=b.dataset.f;document.querySelectorAll('#gal .ph').forEach(function(p){p.hidden=!(f==='all'||p.dataset.cat===f)});
+});});
+</script>
+</body>
+</html>
