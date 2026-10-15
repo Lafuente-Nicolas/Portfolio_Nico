@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Maison Rivière</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../fonts/restaurant.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">Projet de démonstration · entreprise fictive · <a href="../../index.html">Retour au portfolio de Nicolas Lafuente</a></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html">Maison Rivière<small>Bistrot de saison</small></a>
+  <nav class="menu"><a href="index.html">Accueil</a><a href="carte.html">La carte</a><a href="galerie.html">Galerie</a><a href="contact.html" aria-current="page">Contact</a></nav>
+  <a class="btn sm" href="contact.html">Réserver</a>
+</div></header>
+
+<section class="phero" style="padding:0;min-height:280px"><figure class="ph g-terrasse "><img src="images/terrasse.jpg" alt="Façade du restaurant" loading="lazy" onerror="this.remove()"><figcaption>Photo · Façade du restaurant</figcaption></figure><div class="wrap"><div class="k">Infos pratiques</div><h1>Nous <i>trouver</i></h1></div></section>
+<section><div class="wrap cgrid">
+  <div>
+    <div class="k">Horaires</div>
+    <table class="hours" style="margin-top:14px">
+      <tr><td>Mardi au vendredi</td><td>12h – 14h · 19h – 22h</td></tr>
+      <tr><td>Samedi</td><td>19h – 22h30</td></tr>
+      <tr><td>Dimanche et lundi</td><td>Fermé</td></tr>
+    </table>
+    <div class="k">Réservation par téléphone</div>
+    <div class="big">03 00 00 00 00</div>
+    <p style="color:var(--muted);margin:0 0 30px">Du mardi au samedi, à partir de 10h</p>
+    <div class="k">Adresse</div>
+    <div class="big" style="font-size:1.6rem">Rue Montorgueil</div>
+    <p style="color:var(--muted);margin:0">75002 Paris · métro Sentier ou Étienne Marcel</p>
+    <div class="map" id="map" data-src="https://www.google.com/maps?q=Rue+Montorgueil,+75002+Paris&amp;z=16&amp;output=embed">
+      <div class="map__consent">
+        <p>La carte est fournie par Google Maps. L'afficher peut déposer des cookies Google sur votre appareil.</p>
+        <button type="button" class="btn sm" id="map-load">Afficher la carte</button>
+      </div>
+    </div>
+    <a class="btn ghost map-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Rue%20Montorgueil%2C%2075002%20Paris" target="_blank" rel="noopener">Itinéraire avec Google Maps ↗</a>
+  </div>
+  <div>
+    <div class="k">Groupes et événements</div>
+    <h2>Une demande particulière ?</h2>
+    <p style="color:var(--muted);margin:0 0 26px">Privatisation, repas de groupe, anniversaire : écrivez-nous, nous vous répondons sous 24 heures.</p>
+    <form class="f" id="resa-form" novalidate>
+      <div class="two"><label for="r-nom">Nom<input id="r-nom" name="nom" autocomplete="name"></label><label for="r-tel">Téléphone<input id="r-tel" name="tel" type="tel" autocomplete="tel"></label></div>
+      <div class="two"><label for="r-date">Date<input id="r-date" name="date" type="date"></label><label for="r-pers">Personnes<select id="r-pers" name="pers"><option>2</option><option>4</option><option>6</option><option>8 à 12</option><option>Plus de 12</option></select></label></div>
+      <label for="r-msg">Message<textarea id="r-msg" name="msg" placeholder="Votre demande"></textarea></label>
+      <button class="btn" type="submit" style="justify-self:start">Envoyer la demande</button>
+      <p class="fmsg" id="r-out" role="status"></p>
+    </form>
+  </div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div><a class="brand" href="index.html">Maison Rivière<small>Bistrot de saison</small></a><p style="margin-top:16px;max-width:22em">Cuisine maison et produits du marché, dans un bistrot de vingt-huit couverts.</p></div>
+    <div><h4>Adresse</h4><p>Rue Montorgueil<br>75002 Paris</p></div>
+    <div><h4>Horaires</h4><p>Mar–ven · 12h–14h, 19h–22h<br>Sam · 19h–22h30</p></div>
+    <div><h4>Pages</h4><p><a href="index.html">Accueil</a><br><a href="carte.html">La carte</a><br><a href="galerie.html">Galerie</a><br><a href="contact.html">Contact</a></p></div>
+  </div>
+  <div class="fbottom"><span>© 2026 Maison Rivière</span><span>Site conçu par <a href="../../index.html">Nicolas Lafuente</a></span></div>
+</div></footer>
+<script>
+document.getElementById('resa-form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('r-out').textContent="Formulaire de démonstration : aucun message n'a été envoyé.";});
+</script>
+<script>
+document.getElementById('map-load').addEventListener('click', function () {
+  var m = document.getElementById('map');
+  var f = document.createElement('iframe');
+  f.src = m.getAttribute('data-src');
+  f.title = "Plan d'accès : rue Montorgueil, 75002 Paris";
+  f.referrerPolicy = 'no-referrer-when-downgrade';
+  f.allowFullscreen = true;
+  m.innerHTML = '';
+  m.appendChild(f);
+  m.classList.add('is-loaded');
+});
+</script>
+</body>
+</html>
