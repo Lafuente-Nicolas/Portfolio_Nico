@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Devis · Terre et Lierre</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="../../fonts/paysagiste.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">Projet de démonstration · entreprise fictive · <a href="../../index.html">Retour au portfolio de Nicolas Lafuente</a></div>
+<header class="site"><div class="wrap">
+  <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16 16C16 9 11 4 4 4c0 7 5 12 12 12z" fill="#3D6A2E"/><path d="M16 19c0-6 4-10 12-10 0 6-4 10-12 10z" fill="#7FAE5F"/></svg>Terre <span>&amp;</span> Lierre</a>
+  <nav class="menu"><a href="index.html">Accueil</a><a href="services.html">Services</a><a href="realisations.html">Réalisations</a><a href="contact.html" aria-current="page">Devis &amp; contact</a></nav>
+  <a class="btn sm" href="contact.html">Devis gratuit</a>
+</div></header>
+
+<section class="phero" style="padding:0;min-height:300px"><figure class="ph g-equipe "><img src="images/equipe.jpg" alt="L'équipe au travail" loading="lazy" onerror="this.remove()"><figcaption>Photo · L'équipe au travail</figcaption></figure><div class="wrap"><div class="k">Devis gratuit</div><h1>Parlons de votre projet</h1><p>Décrivez-nous votre jardin : on vous rappelle sous 48 heures pour organiser une visite.</p></div></section>
+<section><div class="wrap cgrid">
+  <div>
+    <div class="ibox"><div class="k">Téléphone et SMS</div><div class="big">06 00 00 00 00</div><p>Du lundi au samedi, 8h – 19h</p></div>
+    <div class="ibox"><div class="k">Zone d'intervention</div><p style="margin-top:6px">Jusqu'à 30 km autour du centre-ville. Déplacement et devis offerts.</p><div class="zones"><span>Centre-ville</span><span>Communes voisines</span><span>Secteur nord</span><span>Secteur sud</span><span>Campagne alentour</span></div></div>
+    <div class="ibox"><div class="k">Délais</div><p style="margin-top:6px">Visite sous une semaine, devis sous 48 heures après la visite.</p></div>
+  </div>
+  <form class="f" id="devis-form" novalidate>
+    <div class="k">Demande de devis</div>
+    <div class="two"><label for="d-nom">Nom<input id="d-nom" autocomplete="name"></label><label for="d-tel">Téléphone<input id="d-tel" type="tel" autocomplete="tel"></label></div>
+    <div class="two"><label for="d-ville">Commune<input id="d-ville" autocomplete="address-level2"></label><label for="d-surface">Surface approximative<select id="d-surface"><option>Moins de 100 m²</option><option>100 à 500 m²</option><option>500 à 1 000 m²</option><option>Plus de 1 000 m²</option></select></label></div>
+    <fieldset style="border:0;padding:0;margin:0;display:grid;gap:8px"><legend style="font-size:.85rem;font-weight:700;margin-bottom:8px">Votre projet</legend>
+      <div class="checks">
+        <label for="d-c1"><input type="checkbox" id="d-c1">Création</label>
+        <label for="d-c2"><input type="checkbox" id="d-c2">Taille</label>
+        <label for="d-c3"><input type="checkbox" id="d-c3">Gazon</label>
+        <label for="d-c4"><input type="checkbox" id="d-c4">Terrasse ou allée</label>
+        <label for="d-c5"><input type="checkbox" id="d-c5">Entretien régulier</label>
+      </div>
+    </fieldset>
+    <label for="d-msg">Décrivez votre projet<textarea id="d-msg" placeholder="Ce que vous aimeriez, vos contraintes, votre budget…"></textarea></label>
+    <button class="btn" type="submit" style="justify-self:start">Envoyer ma demande</button>
+    <p class="fmsg" id="d-out" role="status"></p>
+  </form>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  <div class="fgrid">
+    <div><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 29V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/><path d="M16 16C16 9 11 4 4 4c0 7 5 12 12 12z" fill="#3D6A2E"/><path d="M16 19c0-6 4-10 12-10 0 6-4 10-12 10z" fill="#7FAE5F"/></svg>Terre <span>&amp;</span> Lierre</a><p style="margin-top:16px;max-width:22em">Paysagiste : création, aménagement et entretien de jardins pour particuliers et professionnels.</p></div>
+    <div><h4>Contact</h4><p>06 00 00 00 00<br>Du lundi au samedi</p></div>
+    <div><h4>Zone</h4><p>Jusqu'à 30 km<br>autour du centre-ville</p></div>
+    <div><h4>Pages</h4><p><a href="index.html">Accueil</a><br><a href="services.html">Services</a><br><a href="realisations.html">Réalisations</a><br><a href="contact.html">Devis &amp; contact</a></p></div>
+  </div>
+  <div class="fbottom"><span>© 2026 Terre &amp; Lierre</span><span>Site conçu par <a href="../../index.html">Nicolas Lafuente</a></span></div>
+</div></footer>
+<script>
+document.getElementById('devis-form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('d-out').textContent="Formulaire de démonstration : aucune demande n'a été envoyée.";});
+</script>
+</body>
+</html>
