@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nicolas Lafuente · Création de sites internet</title>
+  <meta name="description" content="Portfolio de Nicolas Lafuente : création de sites internet pour restaurants, salons et artisans.">
+  <meta name="theme-color" content="#0B0C0F">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="fonts/portfolio.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <!-- Intro -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <span class="intro__name">Nicolas Lafuente</span>
+      <span class="intro__bar"><span></span></span>
+      <span class="intro__count" id="intro-count">00</span>
+    </div>
+  </div>
+
+  <!-- Curseur personnalisé (ordinateur uniquement) -->
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><span class="cursor__label">Voir</span></span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav" id="nav">
+    <div class="nav__progress" id="progress"></div>
+    <div class="wrap nav__inner">
+      <a class="nav__logo" href="#top" data-magnetic aria-label="Retour en haut">N<i>.</i>L</a>
+      <nav class="nav__links" aria-label="Navigation principale">
+        <a href="#projets"><span data-hover="Projets">Projets</span></a>
+        <a href="#apropos"><span data-hover="À propos">À propos</span></a>
+        <a href="#contact"><span data-hover="Contact">Contact</span></a>
+      </nav>
+      <div class="nav__time"><span class="dot"></span><span>France</span> <span id="clock">--:--</span></div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__orb" id="orb" aria-hidden="true"></div>
+      <div class="wrap">
+        <p class="eyebrow hero__eyebrow" data-reveal>Création de sites internet</p>
+        <h1 class="hero__title">
+          <span class="line"><span data-split>Nicolas</span></span>
+          <span class="line line--indent"><em data-split>Lafuente</em></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__lead" data-reveal style="--d:.15s">Je conçois des sites pour les commerces et les artisans. Des sites clairs, soignés, qui donnent envie de pousser la porte.</p>
+          <a class="hero__scroll" href="#projets" data-reveal style="--d:.3s"><span class="hero__scroll-line"></span>Découvrir les projets</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bandeau défilant -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Restaurants</span><i>✦</i><span>Salons de coiffure</span><i>✦</i><span>Artisans</span><i>✦</i><span>Commerces de proximité</span><i>✦</i><span>Paysagistes</span><i>✦</i><span>Indépendants</span><i>✦</i>
+        <span>Restaurants</span><i>✦</i><span>Salons de coiffure</span><i>✦</i><span>Artisans</span><i>✦</i><span>Commerces de proximité</span><i>✦</i><span>Paysagistes</span><i>✦</i><span>Indépendants</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- Projets -->
+    <section class="section" id="projets">
+      <div class="wrap">
+        <div class="section__head">
+          <div>
+            <p class="eyebrow" data-reveal>Projets</p>
+            <h2 class="section__title" data-reveal style="--d:.08s">Travaux <em>choisis</em></h2>
+          </div>
+          <p class="section__intro" data-reveal style="--d:.16s">Trois univers, trois identités. Chaque site est pensé pour ce que les clients viennent y chercher. Survolez un aperçu pour le parcourir.</p>
+        </div>
+
+        <article class="project" data-reveal>
+          <a class="project__shot" href="projets/restaurant/index.html" data-cursor="Voir" aria-label="Voir le site Maison Rivière">
+            <div class="frame">
+              <div class="frame__bar"><i></i><i></i><i></i><span>maisonriviere-bistrot.fr</span></div>
+              <div class="frame__screen" data-preview="projets/restaurant/index.html"></div>
+            </div>
+          </a>
+          <div class="project__info">
+            <span class="project__num">01</span>
+            <h3 class="project__title">Maison Rivière</h3>
+            <p class="project__text">Un bistrot de quartier qui voulait que sa carte, son ambiance et sa réservation tiennent dans la poche de ses clients.</p>
+            <ul class="project__tags"><li>Restaurant</li><li>4 pages</li><li>Carte</li><li>Galerie</li><li>Réservation</li></ul>
+            <a class="link-arrow" href="projets/restaurant/index.html" data-magnetic>Voir le site <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project project--alt" data-reveal>
+          <a class="project__shot" href="projets/coiffure/index.html" data-cursor="Voir" aria-label="Voir le site Atelier Céleste">
+            <div class="frame">
+              <div class="frame__bar"><i></i><i></i><i></i><span>atelier-celeste.fr</span></div>
+              <div class="frame__screen" data-preview="projets/coiffure/index.html"></div>
+            </div>
+          </a>
+          <div class="project__info">
+            <span class="project__num">02</span>
+            <h3 class="project__title">Atelier Céleste</h3>
+            <p class="project__text">Un salon de coiffure intimiste. Un site doux et lumineux, où l'on trouve en un coup d'œil les prestations, les réalisations et le moyen de réserver.</p>
+            <ul class="project__tags"><li>Salon de coiffure</li><li>4 pages</li><li>Prestations</li><li>Réalisations filtrables</li></ul>
+            <a class="link-arrow" href="projets/coiffure/index.html" data-magnetic>Voir le site <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="project" data-reveal>
+          <a class="project__shot" href="projets/paysagiste/index.html" data-cursor="Voir" aria-label="Voir le site Terre et Lierre">
+            <div class="frame">
+              <div class="frame__bar"><i></i><i></i><i></i><span>terre-et-lierre.fr</span></div>
+              <div class="frame__screen" data-preview="projets/paysagiste/index.html"></div>
+            </div>
+          </a>
+          <div class="project__info">
+            <span class="project__num">03</span>
+            <h3 class="project__title">Terre &amp; Lierre</h3>
+            <p class="project__text">Un paysagiste qui voulait montrer ses chantiers et recevoir des demandes de devis, sans passer ses soirées au téléphone.</p>
+            <ul class="project__tags"><li>Paysagiste</li><li>4 pages</li><li>Services</li><li>Chantiers</li><li>Devis</li></ul>
+            <a class="link-arrow" href="projets/paysagiste/index.html" data-magnetic>Voir le site <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <p class="note" data-reveal>Projets de démonstration réalisés pour des entreprises fictives.</p>
+      </div>
+    </section>
+
+    <!-- À propos -->
+    <section class="section" id="apropos">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow" data-reveal>À propos</p>
+          <h2 class="section__title" data-reveal style="--d:.08s">Bonjour,<br>moi c'est <em>Nicolas</em>.</h2>
+        </div>
+        <div class="about__text">
+          <p class="about__big" data-reveal>J'aime donner aux commerces de quartier et aux artisans un site à la hauteur de ce qu'ils font. Trop souvent, un excellent restaurant ou un artisan reconnu n'existe pas sur internet, ou alors avec une page vieillissante qui ne lui rend pas justice.</p>
+          <p data-reveal style="--d:.1s">Je m'occupe de tout : la structure, les textes, la mise en page et la mise en ligne. L'objectif reste le même à chaque fois : qu'un client qui découvre le site ait envie de venir.</p>
+          <ul class="skills">
+            <li data-reveal style="--d:.05s"><span>Conception</span><b>Design sur mesure</b></li>
+            <li data-reveal style="--d:.12s"><span>Contenu</span><b>Textes rédigés</b></li>
+            <li data-reveal style="--d:.19s"><span>Technique</span><b>Rapide et adapté au mobile</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow" data-reveal>Contact</p>
+        <h2 class="contact__title"><span class="line"><span data-split>Un projet ?</span></span><span class="line"><em data-split>Parlons-en.</em></span></h2>
+
+        <div class="contact__grid">
+          <form class="form" id="contact-form" novalidate data-reveal>
+            <div class="field">
+              <input id="f-name" name="name" type="text" autocomplete="name" placeholder=" " maxlength="80" required>
+              <label for="f-name">Votre nom</label>
+              <span class="field__error" data-error="name"></span>
+            </div>
+            <div class="field">
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder=" " maxlength="254" required>
+              <label for="f-email">Votre email</label>
+              <span class="field__error" data-error="email"></span>
+            </div>
+            <div class="field">
+              <textarea id="f-message" name="message" rows="5" placeholder=" " maxlength="3000" required></textarea>
+              <label for="f-message">Votre message</label>
+              <span class="field__error" data-error="message"></span>
+            </div>
+            <!-- Champ piège anti-robots : invisible pour les humains -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-website">Site web</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <p class="form__privacy">Vos informations servent uniquement à vous répondre et sont supprimées après 12 mois. <a href="mentions-legales.html#confidentialite">En savoir plus</a></p>
+            <div class="form__foot">
+              <button class="btn" type="submit" data-magnetic><span class="btn__label">Envoyer le message</span><span class="btn__spinner" aria-hidden="true"></span></button>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+
+          <div class="contact__direct" data-reveal style="--d:.12s">
+            <p class="contact__lead">Vous préférez écrire ou appeler directement ?</p>
+            <div class="cline">
+              <div><span class="eyebrow">Email</span><a class="cline__value" id="v-mail" href="mailto:lafuentenicolas1@gmail.com">lafuentenicolas1@gmail.com</a></div>
+              <button class="copy" type="button" data-copy="lafuentenicolas1@gmail.com">Copier</button>
+            </div>
+            <div class="cline">
+              <div><span class="eyebrow">Téléphone</span><a class="cline__value" id="v-tel" href="tel:+33768771702">07 68 77 17 02</a></div>
+              <button class="copy" type="button" data-copy="07 68 77 17 02">Copier</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year">2026</span> Nicolas Lafuente</span>
+      <a href="mentions-legales.html" class="footer__top">Mentions légales et confidentialité</a>
+      <a href="#top" class="footer__top" data-magnetic>Haut de page ↑</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
