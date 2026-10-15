@@ -102,3 +102,17 @@ avec une étiquette « Photo · … » qui indique l'image à mettre.
 - Les polices sont hébergées dans `wwwroot/fonts` : aucun appel à Google Fonts.
 - La carte Google Maps du site de démo ne se charge qu'après un clic du visiteur.
 - Les sites de démonstration (`/projets`) sont exclus de l'indexation Google (`noindex` + en-tête `X-Robots-Tag`).
+
+## Hébergement sur Render (gratuit)
+
+Le dépôt contient un `Dockerfile` et un `render.yaml`.
+
+1. Envoyer le code sur GitHub (`git push`).
+2. Sur [render.com](https://render.com), se connecter avec GitHub, puis **New > Blueprint** et choisir ce dépôt.
+3. Renseigner les trois valeurs secrètes demandées : `Smtp__User`, `Smtp__From` (l'adresse Gmail qui envoie)
+   et `Smtp__Password` (le mot de passe d'application Google).
+4. Render construit l'image et publie le site sur `https://portfolio-nico.onrender.com` (ou une adresse proche).
+
+Limites de l'offre gratuite : mise en veille après 15 minutes sans visite (environ une minute pour se réveiller),
+5 Go de bande passante par mois, et disque effacé à chaque redémarrage : le fichier `messages.jsonl` n'est pas conservé,
+les messages arrivent par email.
