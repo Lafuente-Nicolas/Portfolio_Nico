@@ -1,0 +1,15 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+.idea/
+
+# Messages reçus par le formulaire (données privées)
+App_Data/
+
+# Divers
+.DS_Store
+Thumbs.db
